@@ -21,6 +21,11 @@ vi /etc/default/scylla-server
 
 ```
 
+### ScyllaDB Configuration
+```
+vi /etc/scylla/scylla.yaml
+```
+
 ### ScyllaDB Installation
 ```
  scylla_setup --no-raid-setup --no-kernel-check --no-verify-package \
