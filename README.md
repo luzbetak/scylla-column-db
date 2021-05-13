@@ -18,6 +18,7 @@ cassandra-stress write -mode cql3 native
 ### ScyllaDB Developer Mode 
 ```
 vi /etc/default/scylla-server
+  SCYLLA_HOME=/home/scylla
   SCYLLA_ARGS="--log-to-syslog 1 --log-to-stdout 0 --default-log-level info --network-stack posix --developer-mode 1"
 
 ```
