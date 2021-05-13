@@ -6,6 +6,7 @@ Scylla DB
 
 ### ScyllaDB Commands
 ```
+scylla_setup
 systemctl start scylla-server
 systemctl stop scylla-server
 
@@ -28,6 +29,11 @@ vi /etc/scylla/scylla.yaml
 
 ### ScyllaDB Installation
 ```
+    scylla_setup --no-raid-setup --no-kernel-check --no-verify-package \
+                 --no-coredump-setup --no-sysconfig-setup --io-setup 0 \
+                 --no-node-exporter --no-cpuscaling-setup \
+                 --no-fstrim-setup --no-rsyslog-setup
+
  scylla_setup --no-raid-setup --no-kernel-check --no-verify-package \
               --no-ntp-setup --no-coredump-setup --no-sysconfig-setup \
               --io-setup 0 --no-node-exporter --no-cpuscaling-setup \
